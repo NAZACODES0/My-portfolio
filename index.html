@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Onyisi Chinaza | Software Engineering Student &amp; Aspiring Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Onyisi Chinaza, a Software Engineering student at the University of Delta, Agbor, building toward web, mobile, game and machine learning engineering.">
+  <meta name="theme-color" content="#0f1120">
+  <!-- Open Graph: replace the URL and add og-image.png (1200x630) after deploying -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Onyisi Chinaza | Software Engineering Student">
+  <meta property="og:description" content="Web, mobile, game and ML projects by a Software Engineering student in Nigeria.">
+  <meta property="og:url" content="https://YOUR-SITE.vercel.app/">
+  <meta property="og:image" content="https://YOUR-SITE.vercel.app/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Apply saved theme before paint to avoid a flash -->
+  <script>try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav-in">
+      <a href="#home" class="logo" aria-label="Onyisi Chinaza, home">Chinaza<span aria-hidden="true">.</span></a>
+      <nav id="menu" class="links" aria-label="Main">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+        <a href="#education">Education</a><a href="#contact">Contact</a>
+      </nav>
+      <button id="theme" class="icon-btn" aria-label="Switch to light mode" type="button"></button>
+      <button id="burger" class="icon-btn burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu" type="button">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="wrap">
+        <p class="status"><span class="dot" aria-hidden="true"></span>Open to internships and collaborations</p>
+        <h1>Onyisi Chinaza</h1>
+        <p class="headline">Software engineering student building toward full stack, mobile, game and ML engineering.</p>
+        <p class="lead">I'm a 200-level student at the University of Delta, Agbor. I learn by building things, and this site tracks what I make along the way.</p>
+        <div class="btns">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="wrap">
+        <h2 class="sh">About me</h2>
+        <div class="about">
+          <img class="photo" src="photo.jpg" alt="Photo of Onyisi Chinaza" width="320" height="320" loading="eager">
+          <div>
+            <p>I'm Chinaza, a 200-level Software Engineering student at the University of Delta, Agbor, in Delta State, Nigeria. I love programming. When I'm not coding, I'm usually playing video games or watching anime.</p>
+            <h3>Learning and aiming for</h3>
+            <ul class="ticks">
+              <li>Full stack web development</li>
+              <li>Mobile app development</li>
+              <li>Game development</li>
+              <li>Machine learning engineering</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <div class="wrap">
+        <h2 class="sh">Skills</h2>
+        <div id="skill-groups" class="skills"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="wrap">
+        <h2 class="sh">Projects</h2>
+        <div id="filters" class="filters" role="group" aria-label="Filter projects by category"></div>
+        <div id="grid" class="grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="education" class="section reveal">
+      <div class="wrap">
+        <h2 class="sh">Education and activities</h2>
+        <ol class="timeline">
+          <li>
+            <h3>B.Sc. Software Engineering</h3>
+            <p class="meta">University of Delta, Agbor &middot; 2025 to present</p>
+            <p>Currently in 200 level. Coursework includes programming fundamentals, data structures and algorithms.</p>
+          </li>
+          <li>
+            <h3>Self-directed learning</h3>
+            <p class="meta">Ongoing</p>
+            <p>Building personal projects across web, mobile and machine learning, and sharing the code on GitHub.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <div class="wrap contact">
+        <div>
+          <h2 class="sh">Contact</h2>
+          <p>Have a project, internship or idea? Send me a message and I'll reply as soon as I can.</p>
+          <p><a href="mailto:onyisichinaza56@gmail.com">onyisichinaza56@gmail.com</a></p>
+          <p class="social">
+            <a href="https://github.com/OnyisiChinaza" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/onyisi-chinaza-bb210a351" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </p>
+        </div>
+        <!-- Replace YOUR_FORM_ID with your Formspree form ID -->
+        <form id="form" action="https://formspree.io/f/mzeddabd" method="POST" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+          <p class="err" id="name-err" role="alert"></p>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+          <p class="err" id="email-err" role="alert"></p>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+          <p class="err" id="message-err" role="alert"></p>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+          <button class="btn primary" type="submit">Send message</button>
+          <p id="status" class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap foot-in">
+      <p>&copy; <span id="year">2026</span> Onyisi Chinaza</p>
+      <p class="social">
+        <a href="https://github.com/OnyisiChinaza" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/onyisi-chinaza-bb210a351" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:onyisichinaza56@gmail.com">Email</a>
+      </p>
+    </div>
+  </footer>
+  <script src="projects.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
